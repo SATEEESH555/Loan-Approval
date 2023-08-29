@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            image-resolution: initial;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybuvIp9j5ZhjduKIguoCa1NKI0gJywfY6iAsDgi1bWunvFTh_eVunY_4qm9djVUAxNHg&usqp=CAU");
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* h1 {
+            margin-bottom: 20px;
+            color: #ff7d03;
+        } */
+
+        .btn-check-eligibility {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 36px;
+            background-color: transparent;
+            color: #00ff00;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-check-eligibility:hover {
+            background-color: transparent;
+        }
+
+        /* Animation for the button */
+        .btn-check-eligibility {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-check-eligibility:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            transition: left 0.3s ease;
+        }
+
+        .btn-check-eligibility:hover:after {
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <h1>Welcome to the Loan Approval System</h1> -->
+        <a href="/check" class="btn-check-eligibility">click here to fill the form</a>
+    </div>
+</body>
+</html>
